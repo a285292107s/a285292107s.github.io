@@ -349,6 +349,30 @@
 
 
 
+  <div id="giteement-ctn"></div>
+  
+    <link rel="stylesheet" href="/lib/default.css">
+    <script src="/lib/giteement.browser.js"></script>
+  
+  <script>
+  <!-- id: "Hello World" -->
+  var giteement = new Giteement({
+    id: '20190821143857',
+    owner: 'indiezhou',
+    repo: 'blog',
+    backcall_uri: 'https://www.indiezhou.cn',
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+    oauth: {
+      client_id: '91f41c0d76059ec1c43129f767e9ea571e9883aa5df9fa61c61f2014b0737cb9',
+      client_secret: 'cde0f48884c51fa96cc9dffdcf902d09351d005f82396473d0454ea61f2ee9c3'
+    },
+  })
+  giteement.render('giteement-ctn')
+  </script>
+
+
+
+
 
 
 
