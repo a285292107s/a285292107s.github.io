@@ -349,6 +349,30 @@
 
 
 
+  <div id="giteement-ctn"></div>
+  
+    <link rel="stylesheet" href="/lib/default.css">
+    <script src="/lib/giteement.browser.js"></script>
+  
+  <script>
+  <!-- id: "Hello World" -->
+  var giteement = new Giteement({
+    id: '20190821143857',
+    owner: 'indiezhou',
+    repo: 'hexo_talk',
+    backcall_uri: '',
+    oauth_uri: 'https://cors-anywhere.herokuapp.com/https://gitee.com/oauth/token',
+    oauth: {
+      client_id: '91f41c0d76059ec1c43129f767e9ea571e9883aa5df9fa61c61f2014b0737cb9',
+      client_secret: 'cde0f48884c51fa96cc9dffdcf902d09351d005f82396473d0454ea61f2ee9c3'
+    },
+  })
+  giteement.render('giteement-ctn')
+  </script>
+
+
+
+
 
 
 
@@ -418,7 +442,7 @@
       document.title = "性感荷官，在线发牌~ " + originTitle;
       clearTimeout(titleTime);
     } else {
-      document.title = "(*´∇｀*) 开玩笑的，我们是正经博客~ " + originTitle;
+      document.title = "开玩笑的，我们是正经博客(*´∇｀*) ~ " + originTitle;
       titleTime = setTimeout(function () {
         document.title = originTitle;
       }, 2000);
@@ -523,7 +547,7 @@
     	<section class="tools-section tools-section-me" q-show="aboutme">
         
           
-  	  		<div class="aboutme-wrap" id="aboutme">主要涉及技术：<br>Java后端开发、聚合支付、<br>公众号开发、开源爱好者、Linux<br><br>联系QQ:2434387555<br><br>很惭愧<br><br>只做了一点微小的工作<br>谢谢大家</div>
+  	  		<div class="aboutme-wrap" id="aboutme">啊~<br></div>
   	  	
     	</section>
     
