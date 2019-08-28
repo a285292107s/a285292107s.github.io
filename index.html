@@ -225,7 +225,8 @@
   
   <div class="article-entry" itemprop="articleBody">
     
-    <h1 id="玩法概述"><a href="#玩法概述" class="headerlink" title="玩法概述"></a>玩法概述</h1><p>2048是一个益智游戏。规则是：<br>开始时棋盘内随机出现两个数字，出现的数字仅可能为2或4<br>玩家可以选择上下左右四个方向，若棋盘内的数字出现位移或合并，视为有效移动<br>玩家选择的方向上若有相同的数字则合并，每次有效移动可以同时合并，但不可以连续合并<br>合并所得的所有新生成数字想加即为该步的有效得分<br>玩家选择的方向行或列前方有空格则出现位移<br>每有效移动一步，棋盘的空位(无数字处)随机出现一个数字(依然可能为2或4)<br>棋盘被数字填满，无法进行有效移动，判负，游戏结束<br>棋盘上出现2048，判胜，游戏结束<br><img src="/2019/08/28/2048/t12.jpg" alt><br>玩法流程图<br><img src="/2019/08/28/2048/t20.jpg" alt><br>UI设计示意图</p>
+    <h1 id="玩法概述"><a href="#玩法概述" class="headerlink" title="玩法概述"></a>玩法概述</h1><p>2048是一个益智游戏。规则是：<br>开始时棋盘内随机出现两个数字，出现的数字仅可能为2或4<br>玩家可以选择上下左右四个方向，若棋盘内的数字出现位移或合并，视为有效移动<br>玩家选择的方向上若有相同的数字则合并，每次有效移动可以同时合并，但不可以连续合并<br>合并所得的所有新生成数字想加即为该步的有效得分<br>玩家选择的方向行或列前方有空格则出现位移<br>每有效移动一步，棋盘的空位(无数字处)随机出现一个数字(依然可能为2或4)<br>棋盘被数字填满，无法进行有效移动，判负，游戏结束<br>棋盘上出现2048，判胜，游戏结束<br><img src="/2019/08/28/2048/t12.jpg" alt><br>玩法流程图<br><img src="/2019/08/28/2048/t20.jpg" alt></p>
+<h1 id="UI设计示意图"><a href="#UI设计示意图" class="headerlink" title="UI设计示意图"></a>UI设计示意图</h1><p><img src="/2019/08/28/2048/t23.jpg" alt></p>
 <h1 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h1><p>资源文件管理<br>先根据资源类型划分，随后根据场景划分，再根据用途划分为三个板块：view，与用户UI相关；model，与游戏实体相关；controller，游戏控制器相关。</p>
 <ul>
 <li>Sences</li>
@@ -261,6 +262,17 @@
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">游戏,杂记</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
@@ -335,6 +347,17 @@
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">游戏</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
@@ -424,7 +447,7 @@
 		<ul class="article-tag-list">
 			 
         		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">游戏</a>
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color1">游戏,杂记</a>
         		</li>
       		
 		</ul>
@@ -511,6 +534,17 @@
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">游戏</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
@@ -595,6 +629,17 @@
   <div class="article-info article-info-index">
     
     
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">游戏</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
     
 
     
@@ -752,6 +797,10 @@
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">游戏,杂记</a>
+              </li>
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color3">游戏</a>
